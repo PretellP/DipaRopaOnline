@@ -1,0 +1,443 @@
+.cont-section
+{
+    position: relative;
+    min-height: 80vh;
+    padding-top: 80px; padding-bottom: 60px;
+    font-size: 14px;
+}
+
+/*----------------------------------------------*/
+
+#ofertaBeatles,
+#ofertaRhcp
+{
+    padding-top: 100px;
+    margin-top: -100px;
+}
+
+.images-top
+{
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.images-top img
+{
+    width: 100%;
+    max-width: 900px;
+}
+
+.cont-section > div:nth-child(2)
+{
+    margin-top: 300px;
+}
+
+.contenedor-productos
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    padding: 2em;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%23B6B6B6' stroke-width='4' stroke-dasharray='1%2c 20%2c 12' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    border-radius: 100px;
+}
+
+.producto 
+{ 
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    width: 300px;
+    max-width: 300px;
+    height: 520px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    transition: all.5s ease;
+    border-radius: 20px;
+}
+
+.producto .diamond
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.producto .diamond::before
+{
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(255, 255, 255, 0.541);
+    clip-path: circle( 400px at center);
+    transition: clip-path.5s, background-color.3s;
+}
+
+.producto img
+{
+    position: absolute;
+    top: 74%; left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 90%;
+    pointer-events: none;
+    transition: left.5s, height.5s;
+}
+
+.producto .content 
+{
+    font-size: 12px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 260px;
+    min-width: 100%;
+    left: 0;
+    padding: 15px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s;
+    color: rgb(0, 0, 0);
+}
+
+.producto .content form
+{
+    display: flex;
+    padding-top: 15px; padding-bottom: 15px;
+    height: 260px;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.producto .content h2
+{
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.producto .content h4
+{
+    font-size: 1.6em;
+    margin: 0;
+    font-weight: bolder;
+}
+
+.producto .content h5
+{
+    margin: 0;
+    color: rgb(143, 52, 52);
+}
+
+
+.producto .content p
+{
+    margin: 0;
+    font-size: 1em;
+}
+
+.producto .content p + span
+{
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.726);
+    color: rgb(115, 255, 0);
+}
+
+.selector-size
+{
+    display: flex;
+    gap: 15px;
+}
+
+.selector-size input[type='radio']
+{
+    display: none;
+}
+
+.selector-size input[type='radio'] + label
+{
+    cursor: pointer;
+    text-align: center;
+    width: 40px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(0, 0, 0);
+    transition: all.3s;
+}
+
+.selector-size input[type='radio']:checked + label
+{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+
+input[type='number']
+{
+    padding: 0 !important;
+    background-color: transparent;
+    text-align: center;
+    font-size: 1em;
+    border: none;
+    width: 100%;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button
+{
+    appearance: none;
+}
+
+input[type='number']:focus
+{
+    outline: none;
+}
+
+.selector-stock
+{
+    display: flex;
+    border-radius: 15px;
+    width: 70px;
+    position: relative;
+    background-color: whitesmoke;
+}
+
+.producto button
+{
+    padding: 0 5px 0 5px;
+    background-color: transparent;
+    border: none;
+}
+
+.producto .content form > button
+{
+    padding: 0;
+}
+
+.producto .content button[type="submit"]
+{
+    font-size: 0.8em;
+    position: relative;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.671);
+    border-radius: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: box-shadow.3s ;
+}
+
+.producto .content button[type="submit"]:hover
+{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.219);
+}
+
+.producto .content button[type="submit"]:active
+{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) 
+{
+    .cont-section
+    {
+        font-size: 16px;
+    }
+
+    .contenedor-productos
+    {
+        gap: 30px;
+    }
+
+    .producto 
+    { 
+        width: 350px;
+        max-width: 350px;
+        height: 600px;
+    }
+
+    .producto .content
+    {
+        height: 300px;
+        font-size: 14px;
+        padding: 30px;
+    }
+
+    .producto .content form
+    {
+        height: 300px;
+    }
+
+    .producto img
+    {
+        width: auto;
+        height: 310px;
+    }
+}
+@media (min-width: 992px) 
+{
+    #ofertaBeatles,
+    #ofertaRhcp
+    {
+        padding-top: 150px;
+        margin-top: -150px;
+    }
+
+    .cont-section
+    {
+        min-height: 80vh;
+        padding-bottom: 100px;
+    }
+
+    .contenedor-productos
+    {
+        justify-content: space-around;
+    }
+
+    .producto
+    {
+        width: 350px;
+        height: 310px;
+        max-width: 350px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .producto:hover
+    {
+        height: 310px;
+        width: 500px;
+        max-width: 500px;
+        border-top: 1px solid rgba(189, 189, 189, 0.5);
+        border-left: 1px solid rgb(189, 189, 189, 0.5);
+        border-right: 1px solid rgb(119, 119, 119, 0.5);
+        border-bottom: 1px solid rgb(119, 119, 119, 0.5);
+    }
+
+    .producto .diamond::before
+    {
+        background-color: transparent;
+        clip-path: circle( 120px at center);
+        transition: clip-path.5s, background-color.3s;
+    }
+
+    .producto:hover .diamond:before
+    {
+        background-color: rgba(255, 255, 255, 0.541);
+        backdrop-filter: blur(3px);
+        clip-path: circle(400px at center);
+    }
+
+    .producto .content
+    {
+        font-size: 14px;
+        width: 250px;
+        min-width: 250px;
+        left: auto;
+        padding: 0 0 0 1.3em;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .producto:hover .content
+    {
+        visibility: visible;
+        opacity: 1;
+        left: 0;
+    }
+
+    .producto .content form
+    {
+        height: 310px;
+    }
+
+    .producto img
+    {
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        height: 300px;
+    }
+
+    .producto:hover img
+    {
+        top: 50%;
+        left: 75%;
+        height: 350px;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    .producto
+    {
+        width: 400px;
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 1400px)
+{
+    .producto
+    {
+        width: 310px;
+        max-width: 350px;
+        height: 310px;
+    }
+
+    .producto .content form
+    {
+        height: 310px;
+    }
+
+}
+
+@media (min-width: 1600px)
+{
+    .producto
+    {
+        width: 350px;
+        height: 350px;
+    }
+
+    .producto:hover
+    {
+        height: 350px;
+        width: 600px;
+        max-width: 600px;
+    }
+
+    .producto .content
+    {
+        font-size: 16px;
+        width: 300px;
+        min-width: 300px;
+    }
+
+    .producto .content form
+    {
+        height: 350px;
+    }
+
+    .producto img
+    {
+        height: 340px;
+    }
+
+    .producto:hover img
+    {
+        height: 410px;
+    }
+}

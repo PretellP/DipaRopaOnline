@@ -1,0 +1,65 @@
+section.cont-section
+{
+    min-width: 100% !important;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.8) -5%, rgb(48, 48, 48, 0.5) , rgb(0, 0, 0, 0.8) 105%);
+    min-height: 100vh;
+    padding-top: 200px; padding-bottom: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(182, 182, 182);
+    font-family: 'Caviar', sans-serif;
+    flex-direction: column;
+    font-size: 16px;
+    gap: 30px;
+}
+
+/*--------------------------------------------*/
+
+section.cont-section .carrito-img img
+{
+    width: 90%;
+    max-width: 600px;
+    filter: invert(.6);
+}
+
+section.cont-section div a
+{
+    text-decoration: none;
+}
+
+section.cont-section div a button
+{
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px dashed rgba(182, 182, 182, 0.548);
+    border-radius: 15px;
+    color: rgb(207, 207, 207);
+    font-size: 1.2em;
+    min-height: 60px;
+    max-width: auto;
+    padding: 15px;
+    transition: .25s;
+}
+
+section.cont-section div a button:hover 
+{
+    letter-spacing: .13em;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.37);
+}
+
+
+
+
+
+
+
+/*-----------------------------------------------*/
+
+@media (min-width: 992px)
+{
+    section.cont-section
+    {
+        padding-top: 250px;
+    }
+}

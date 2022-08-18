@@ -1,0 +1,792 @@
+
+article
+{
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.8) -5%, rgb(48, 48, 48, 0.5) , rgb(0, 0, 0, 0.8) 105%);
+    padding-top: 150px;
+}
+
+
+.carrusel1
+{
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    border-radius: 0 0 3vw 3vw;
+}
+
+#carousel_banner button
+{
+    background-color: rgba(255, 255, 255, 0);
+    transition: all.3s ease;
+}
+
+#carousel_banner:hover .carousel-indicators button
+{
+    background-color: rgb(255, 255, 255);
+}
+
+.container_ca
+{
+    position: relative;
+    margin-top: 4vw; margin-bottom: 2vw;
+}
+
+.txt_cami
+{
+    margin-bottom: 4vw;
+    text-align: center;
+}
+
+[class*='txt_'] h1   
+{
+    color: var(--titulo-color);
+    font-family:'Gothic', sans-serif;
+    font-size: 30px;
+}
+
+[class*='txt_'] p
+{
+    margin-top: 1vw;
+    color: var(--parraf-color);
+    font-family: 'Grand Aventure',sans-serif;
+    font-size: 18px;
+}
+
+.txt_zapas
+{
+    margin-top: 4vw;
+    text-align: center;
+}
+
+.hover-ca
+{
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    font-size: 9px;
+    border-radius: 10%;
+    position: relative; 
+    overflow: hidden;
+}
+
+.ver-mas
+{
+    z-index: 2;
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.281));
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    transition: all.3s ease-in-out;
+}
+
+.int-mas
+{
+    display: table;
+    position: relative;
+    margin: auto;
+    font-size: 1.2em;
+    width: 6em;
+    height: 2em;
+}
+
+.ver-mas p
+{
+    display: table-cell;
+    font-family: 'Gothic', sans-serif;
+    font-weight: 400;
+    color: rgb(201, 201, 201);
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.ver-mas i
+{
+    display: table-cell;
+    vertical-align: bottom;
+    font-size: .8em;
+    padding-bottom: 3%;
+    color: rgb(201, 201, 201);
+}
+
+.background-hover-ca
+{
+    z-index: 1;
+    position: absolute;
+    width: 50%; height: 50%;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%,0);
+    background-color: rgba(0, 0, 0, 0.336);
+    top: 100%;
+    transition: all.3s ease-in-out;
+}
+
+.info-ca
+{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.788) 70%, rgba(0, 0, 0, 0));
+    z-index: 2;
+    width: 100%;
+    bottom: -100%;
+    position: absolute;
+    transition: all.3s;
+}
+
+.info-ca h2
+{
+    font-size: 1.7em;
+    padding-top: 8px;
+    font-family: 'Grand Aventure', sans-serif;
+    font-weight: 100;
+    color: rgb(199, 199, 199);
+    text-align: center;
+}
+
+.galeria_item:hover .background-hover-ca
+{
+    width: 150% ;height: 150%;
+    top: -20%;
+}
+
+.galeria_item:hover .hover-ca img
+{
+    filter:grayscale(.4);
+    transform: scale(1.07);
+}
+
+.galeria_item:hover .info-ca
+{
+    bottom: 0%;
+}
+
+.galeria_item:hover .ver-mas
+{
+    top: 0;
+}
+
+.ver-mas:hover
+{
+    transform: scale(1.15);
+    transition: all.2s ease-in-out;
+}
+
+.galeria_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all.3s ease-in-out;
+}
+.cont-banner-za{
+    position: relative;
+    left: 50%;
+    margin-left: -50%;
+    width: 100%;
+    margin-bottom: 1vw;
+    overflow: hidden;
+}
+.banner-zapas-img{
+    position: relative;
+    height: 57vw;
+    width: 1900px;
+    left: 50%;
+    margin-left: -950px;
+}
+.responsive-ban{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 165vw; height: 100%;
+}
+.responsive-ban img{
+    width: 100%;
+}
+.cont-interior{
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    width: 87vw;
+    height: 52vw;
+}
+.boton-ver{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0));
+    display: flex;
+    font-size: 4vw;
+    list-style: none;
+    padding: 10px 15px 15px 0;
+    justify-content: right;
+}
+.boton-ver a{
+    display: block;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 2px 2px 3px black;
+    color: whitesmoke;
+    padding: .3em .3em 0 .3em;
+    font-family: 'Grand Aventure',sans-serif;
+    font-weight: 500;
+}
+.boton-ver .border{
+    position: absolute;
+    box-shadow: 2px 2px 4px black;
+    right: 0;
+    background-color: currentColor;
+    transition: transform.3s ease-in-out;
+}
+.border-top,
+.border-bottom{
+    width: 100%; height: 1px;
+    transform: scaleX(0);
+}
+.border-left,
+.border-right{
+    width: 1px; height: 100%;
+    transform: scaleY(0);
+}
+.border-left,
+.border-top,
+.border-right{
+    top: 0;
+}
+.border-bottom{
+    z-index: 1;
+    bottom: 0;
+    transform-origin: bottom right;
+}
+.border-top{
+    transform-origin: top left;
+}
+.border-left{
+    right: auto;
+    left: 0;
+    transform-origin: top left;
+}
+.border-right{
+    transform-origin: bottom right;
+}
+.boton-ver a:hover .border-top,
+.boton-ver a:hover .border-bottom{
+    transform: scaleX(1);
+}
+.boton-ver a:hover .border-left,
+.boton-ver a:hover .border-right{
+    transform: scaleY(1);
+}
+.container_zapas{
+    margin-bottom: 3vw;
+}
+.hover-zap{
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    border-radius: 4vw;
+    overflow: hidden;
+    position: relative;
+}
+.cont-descp-zapas{
+    display: table;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.404);
+    backdrop-filter: saturate(.7);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all.25s ease-in-out;
+}
+.descp-zapas{
+    display: table-cell;
+    position: relative;
+    vertical-align: middle;
+    font-size: 1em;
+}
+.descp-zapas p{
+    font-family: 'Grand Aventure', sans-serif;
+    font-weight: lighter;
+    color: var(--titulo-color);
+    text-align: center;
+}
+.galeria_img_zapas{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.05);
+    transition: all.25s ease-in-out;
+}
+.galeria_item_zapas:hover .cont-descp-zapas{
+    opacity: 1;
+}
+.galeria_item_zapas:hover .galeria_img_zapas{
+    transform: scale(1);
+}
+.txt_zapatos{
+    font-family: 'Gothic', sans-serif;
+    color: rgb(204, 204, 204);
+    text-align: center;
+    margin-bottom: 2vw;
+}
+.galeria_item_zptos .galeria_img_zptos{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
+    transform: translateY(-8%);
+    transition: all.3s ease-in-out;
+}
+.galeria_item_zptos:nth-child(3) .galeria_img_zptos{
+    height: calc(66vw - 21px)
+}
+.galeria_item_zptos{
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    height: calc(61vw - 21px);
+    overflow: hidden;
+}
+.galeria_item_zptos a{
+    text-decoration: none;
+}
+.galeria_item_zptos:hover .galeria_img_zptos{
+    transform: translateY(0);
+}
+.bg-zptos-hover{
+    position: relative;
+}
+.info_zptos{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    font-size: 20px;
+    transform: translateY(-100%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+    color: var(--titulo-color);
+    transition: all.1s ease-in-out;
+    transition-delay: .2s;
+}
+.info_zptos h3{
+    font-family: 'Grand Aventure', sans-serif;
+    margin: 0;
+    padding: .5em;
+    font-weight: lighter;
+    font-size: 1em;
+    text-align: center;
+}
+.bg-zptos{
+
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: .2;
+    transform: translateY(-100%);
+    background-color: rgba(0, 0, 0, 0.336);
+    backdrop-filter: sepia(.2) contrast(1.1);
+    transition: all.3s ease-in-out;
+}
+.galeria_item_zptos:hover .bg-zptos{
+    transform: translateY(0);
+    opacity: 1;
+}
+.galeria_item_zptos:hover .info_zptos{
+    transform: translateY(0);
+    transition-delay: .1s;
+}
+.container_zptos{
+    margin-bottom: 3vw;
+}
+.txt-contacto{
+    font-family: 'Grand Aventure', sans-serif;
+    font-size: 17px;
+    color: var(--titulo-color);
+}
+.txt-contacto p{
+    font-size: 1em;
+}
+.txt-contacto>p{
+    margin-bottom: 2vw;
+}
+.texto-c{
+    margin: auto;
+    width: 100%;
+}
+.texto-wsp{
+    font-size: 1em;
+}
+.texto-wsp p{
+    font-size: 1em;
+}
+.texto-wsp img{
+    width: 1.6em;
+}
+.texto-floro{
+    color: whitesmoke;
+    font-family: 'Gothic i', sans-serif;
+    width: 100%;
+    text-shadow: 2px 2px 4px black;
+    font-size: 13px;
+}
+.texto-floro p:nth-child(2)
+{
+    margin-left: auto;
+}
+
+
+ 
+
+@media (min-width:425px) 
+{
+    [class*='txt_'] h1   
+    {
+        font-size: 45px;
+    }
+
+    [class*='txt_'] p
+    {
+        font-size: 24px;
+    }
+
+    .hover-ca
+    {
+        font-size: 13px;
+    }
+
+    .hover-zap
+    {
+        font-size: 25px;
+    }
+
+    .info_zptos
+    {
+        font-size: 25px;
+    }
+
+    .txt-contacto
+    {
+        font-size: 23px;
+    }
+
+    .texto-floro
+    {
+        font-size: 16px;
+    }
+}
+
+@media (min-width:768px)
+{
+    [class*='txt_'] h1   
+    {
+        font-size: 60px;
+    }
+
+    [class*='txt_'] p
+    {
+        font-size: 30px;
+    }
+
+    .hover-ca
+    {
+        font-size: 16px;
+    }
+
+    .hover-zap
+    {
+        font-size: 33px;
+    }
+
+    .info_zptos{
+
+        font-size: 35px;
+    }
+
+    .txt-contacto
+    {
+        font-size: 28px;
+    }
+
+    .texto-floro
+    {
+        font-size: 19px;
+    }
+}
+
+@media (min-width:992px)
+{
+    article
+    {
+        padding-top: 200px;
+    }
+
+    [class*='txt_'] h1
+    {
+        font-size: 50px;
+    }
+
+    [class*='txt_'] p
+    {
+        font-size: 20px;
+    }
+
+    .txt_cami
+    {
+        position: absolute;
+        right: 0;
+        text-align: right;
+    }
+
+    .galeria_item:nth-child(1)
+    {
+        height: 300px;
+    }
+
+    .galeria_item:nth-child(2)
+    {
+        margin-top: 150px;
+        height: 300px;
+    }
+
+    .galeria_item:nth-child(3)
+    {
+        margin-top: 300px;
+    }
+
+    .txt_zapas
+    {
+        position: absolute;
+        bottom: 0;   
+        text-align: left;
+    }
+
+    .boton-ver
+    {
+        font-size: 38px;
+    }
+
+    .hover-zap
+    {
+        border-radius: 45px;
+    }
+
+    .info_zptos
+    {
+        font-size: 30px;
+    }
+
+    .galeria_item_zptos
+    {
+        height: 366px;
+    } 
+
+    .galeria_item_zptos:nth-child(3) .galeria_img_zptos
+    {
+        height: 399px;
+    }
+
+    .txt-contacto
+    {
+        font-size: 20px;
+    }
+
+    .texto-c
+    {
+        width: 500px;
+    }
+
+    .texto-floro
+    {
+        font-size: 15px;
+        width: 850px;
+    } 
+}
+
+@media (min-width:1200px)
+{
+    [class*='txt_'] h1
+    {
+        font-size: 60px;
+    }
+
+    [class*='txt_'] p
+    {
+        font-size: 23px;
+    }
+
+    .galeria_item:nth-child(1)
+    {
+        height: 359px;
+    }
+
+    .galeria_item:nth-child(2)
+    {
+        grid-column-start: span 4;
+        margin-top: 179px;
+        height: 359px;
+    }
+
+    .galeria_item:nth-child(3)
+    {
+        grid-column-start: span 4;
+        margin-top: 359px;
+    }
+
+    .banner-zapas-img
+    {
+        height: 655px;
+    }
+
+    .responsive-ban
+    {
+        width: 100%;
+    }
+
+    .responsive-ban img
+    {
+        height: 100%;
+    }
+
+    .cont-interior
+    {
+        width: 1005px;
+        height: 600px;
+    }
+
+    .galeria_item_zptos
+    {
+        height: 439px;
+    }
+
+    .galeria_item_zptos:nth-child(3) .galeria_img_zptos
+    {
+        height: 477px;
+    }
+
+    .info_zptos
+    {
+        font-size: 35px;
+    }
+
+    .txt-contacto
+    {
+        font-size: 23px;
+    }
+
+    .texto-c
+    {
+        width: 550px;
+    }
+
+    .texto-floro
+    {
+        font-size: 16px;
+        width: 950px;
+    }
+
+}
+
+@media (min-width:1400px)
+{
+    [class*='txt_'] h1
+    {
+        font-size: 65px;
+    }
+
+    [class*='txt_'] p
+    {
+        font-size: 25px;
+    }
+
+    .galeria_item:nth-child(1)
+    {
+        height: 420px;
+    }
+
+    .galeria_item:nth-child(2)
+    {
+        margin-top: 210px;
+        height: 420px;
+    }
+
+    .galeria_item:nth-child(3)
+    {
+        margin-top: 420px;
+    }
+
+    .galeria_item_zptos
+    {
+        height: 512px;
+    }
+
+    .galeria_item_zptos:nth-child(3) .galeria_img_zptos
+    {
+        height: 557px;
+    }
+
+    .txt-contacto
+    {
+        font-size: 25px;
+    }
+
+    .texto-c
+    {
+        width: 600px;
+    }
+
+    .texto-floro
+    {
+        font-size: 17px;
+        width: 1000px;
+    }
+
+}
+ 
+@media (min-width:1600px)
+{
+    .container_p
+    {
+        max-width: 1900px;
+    }
+    
+    [class*='txt_'] h1
+    {
+        font-size: 70px;
+    }
+    
+    [class*='txt_'] p
+    {
+        font-size: 30px;
+    }
+    
+    .galeria_item:nth-child(1){
+        
+        height: 478px;
+    }
+    
+    .galeria_item:nth-child(2)
+    {
+        margin-top: 239px;
+        height: 478px;
+    }
+    
+    .galeria_item:nth-child(3)
+    {
+        margin-top: 478px;
+    }
+    
+    .galeria_item_zptos
+    {
+        height: 586px;
+    }
+    
+    .galeria_item_zptos:nth-child(3) .galeria_img_zptos
+    {
+        height: 637px;
+    }
+    
+    .txt-contacto
+    {
+        font-size: 30px;
+    }
+    
+    .texto-c
+    {
+        width: 600px;
+    }
+    
+    .texto-floro
+    {
+        font-size: 19px;
+        width: 1200px;
+    }
+       
+}
+
